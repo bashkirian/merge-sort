@@ -1,6 +1,4 @@
 cmake_minimum_required(VERSION 3.10.0)
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(merge-sort-test merge-sort.cpp test.cpp)
 target_link_libraries(merge-sort-test PUBLIC doctest default)
 add_test(NAME merge-sort-test COMMAND merge-sort-test --force-colors -d)

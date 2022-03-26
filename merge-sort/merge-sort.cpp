@@ -3,15 +3,16 @@
 
 List::List(std::initializer_list<int> list) {
     // Задание №1: сделать список из list
-    ListElement * tail = nullptr;
+    ListElement* tail = nullptr;
     for (auto number : list) {
         // TODO: Добавить в создаваемый односвязный список
         if (tail == nullptr) {
-            head = make_unique<ListElement>(number);
+            // TODO: Создать первый элемент списка в head
+            head = std::make_unique<ListElement>(number);
             tail = head.get();
         } else {
             // TODO: Создать элемент списка в tail->next
-            tail->next = make_unique<ListElement>(number);
+            tail->next = std::make_unique<ListElement>(number);
             tail = tail->next.get();
         }
     }
@@ -22,66 +23,65 @@ auto merge(List a, List b) noexcept -> List {
     List result;
     ListElement *tail = 
         nullptr; // должен указывать на последний элемент списка result
-    result.head->next = unique_ptr<ListElement>(tail);
-    while (a.head && b.head) {
-        // Выбираем меньший из a.head.value и b.head.value
-        // и переносим a.head или b.head в конец result,
-        // после чего переносим tail->next обратно
-        // в a.head или b.head
-        if (a.head->value < b.head->value)
-        {
-            tail = a.head.get();
-            a.head = std::move(tail->next);
-        }
-        else
-        {
-            tail = b.head.get();
-            b.head = std::move(tail->next);
-        }
-    }
-    // переносим оставшийся список в конец result
-    while (a.head)
+    ListElement dummy(0);
+    tail = &dummy;
+    dummy.next = nullptr;
+    while (1) 
     {
-        tail = a.head.get();
-        a.head = std::move(tail->next);
+        if (a.head == nullptr) {
+            tail->next = move(b.head);
+            break;
+        } 
+        else if (b.head == nullptr) {
+            tail->next = move(a.head);
+            break;
+        }
+        if (a.head->value <= b.head->value) 
+        {
+            auto newNode = move(a.head);
+            a.head = move(newNode->next);
+            newNode->next = move(tail->next);
+            tail->next = move(newNode);
+        } 
+        else 
+        {
+            auto newNode = move(b.head);
+            b.head = move(newNode->next);
+            newNode->next = move(tail->next);
+            tail->next = move(newNode);
+        }
+        tail = tail->next.get(); 
     }
-    while (b.head) {
-        tail = b.head.get();
-        b.head = std::move(tail->next);
-    }
-    result.head = move(result.head->next);
+    result.head = move(dummy.next);
     return result;
 }
 
-auto mergesort(List &list) noexcept -> void {
-    // Сортировка слиянием
-    // 1. Определяем середину списка (см. ветку list-algo семинаров)
-    ListElement *middle = nullptr;
-    size_t list_size = 0;
-    auto dummy = list.head.get();
-    while (dummy) 
-    {
-        list_size++;
-        dummy = dummy->next.get();
+auto mergesort(List &list) noexcept -> void 
+{
+    List first, second;
+    if ((list.head == nullptr) || (list.head->next == nullptr)) {
+        return;
     }
-    List first;
-    list_size /= 2;
-    while (list_size)
-    {
-        middle = list.head.get();
-        first.head = move(list.head);
-        list.head = move(middle->next);
-        list_size--;
+    ListElement *ptr1;
+    ListElement *ptr2;
+    ptr1 = list.head.get();
+    ptr2 = list.head->next.get();
+
+    while (ptr2 != nullptr) {
+        ptr2 = ptr2->next.get();
+        if (ptr2 != nullptr) {
+            ptr1 = ptr1->next.get();
+            ptr2 = ptr2->next.get();
+        }
     }
-    // 2. Переносим вторую половину в новый список
-    List second;
-    // second.head = std::move(middle->next);
-    second.head = std::move(middle->next);
-    // 3. Для каждой половины запускаем mergesort
+
+    first.head = move(list.head);
+    second.head = move(ptr1->next);
+
     mergesort(first);
     mergesort(second);
-    // 4. Делаем merge от результатов,
-    // не забыв std::move в аргументах,
-    // присваивая результат в list
-    list = merge(std::move(first), std::move(second));
+
+    List result = merge(std::move(first), std::move(second));
+    list.head = move(result.head);
+    return;
 }
