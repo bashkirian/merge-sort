@@ -1,0 +1,130 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "external/doctest",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/doctest",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "merge-sort",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "merge-sort",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "MergeSort",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "doctest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "cloud-test::@b06f05b6095166eb2344",
+					"jsonFile" : "target-cloud-test-Debug-2299e07ad8eb0039ac50.json",
+					"name" : "cloud-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "doctest::@dd360341bad613a1a6b7",
+					"jsonFile" : "target-doctest-Debug-bc1856ea8168f9fc59c0.json",
+					"name" : "doctest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "merge-sort::@b06f05b6095166eb2344",
+					"jsonFile" : "target-merge-sort-Debug-cdf59439c014d5982522.json",
+					"name" : "merge-sort",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "merge-sort-test::@b06f05b6095166eb2344",
+					"jsonFile" : "target-merge-sort-test-Debug-80d32bd7bb3d93383c1c.json",
+					"name" : "merge-sort-test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)",
+		"source" : "C:/Users/exagg/source/repos/merge-sort1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

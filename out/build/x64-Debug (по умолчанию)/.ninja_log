@@ -1,0 +1,9 @@
+# ninja log v5
+21	1770	670000470	merge-sort/CMakeFiles/merge-sort-test.dir/merge-sort.cpp.obj	d23dfd62f358e32c
+36	1780	670000470	merge-sort/CMakeFiles/merge-sort.dir/merge-sort.cpp.obj	fff392b157910872
+28	2512	670000470	merge-sort/CMakeFiles/merge-sort.dir/main.cpp.obj	1a54921fdbad813c
+13	2950	670000471	merge-sort/CMakeFiles/merge-sort-test.dir/test.cpp.obj	3802d6990ea4e3eb
+2518	3534	670000471	merge-sort/merge-sort.exe	facdc5695f5f89d1
+3	3992	670000472	external/doctest/CMakeFiles/doctest.dir/doctest.cpp.obj	a2b1bd7b36a788cb
+3997	4158	670000472	external/doctest/doctest.lib	bcc069ed0e55471e
+4158	4966	670000473	merge-sort/merge-sort-test.exe	7ce6e78c2606044d

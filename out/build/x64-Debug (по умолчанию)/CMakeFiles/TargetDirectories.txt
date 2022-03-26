@@ -1,0 +1,13 @@
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/CMakeFiles/rebuild_cache.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/CMakeFiles/test.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/CMakeFiles/edit_cache.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/external/doctest/CMakeFiles/rebuild_cache.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/external/doctest/CMakeFiles/test.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/external/doctest/CMakeFiles/doctest.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/external/doctest/CMakeFiles/edit_cache.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/merge-sort/CMakeFiles/cloud-test.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/merge-sort/CMakeFiles/merge-sort-test.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/merge-sort/CMakeFiles/merge-sort.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/merge-sort/CMakeFiles/rebuild_cache.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/merge-sort/CMakeFiles/test.dir
+C:/Users/exagg/source/repos/merge-sort1/out/build/x64-Debug (по умолчанию)/merge-sort/CMakeFiles/edit_cache.dir

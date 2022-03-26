@@ -1,0 +1,196 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "merge-sort/merge-sort.exe"
+		},
+		{
+			"path" : "merge-sort/merge-sort.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"merge-sort/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/W4"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14242"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14254"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14263"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14265"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14287"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/we4289"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14296"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14311"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14545"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14546"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14547"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14549"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14555"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14619"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14640"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14826"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14905"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14906"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/w14928"
+				},
+				{
+					"fragment" : "-std:c++latest"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"id" : "merge-sort::@b06f05b6095166eb2344",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "merge-sort",
+	"nameOnDisk" : "merge-sort.exe",
+	"paths" : 
+	{
+		"build" : "merge-sort",
+		"source" : "merge-sort"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "merge-sort/merge-sort.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "merge-sort/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
